@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Guessing Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
 
-  </head>
-  <body>
+<div id='app' class="center">
 
-      <div id='app' class="center">
+  <div id='headers'>
+    <!-- Title and subtitles! -->
+    <h1 id="title">Play the Guessing Game!</h1>
+    <h3 id="subtitle">Guess a number between 1-100</h3>
+  </div>
 
-        <div id='headers'>
-          <!-- Title and subtitles! -->
-          <h1>Play the Guessing Game</h1>
-          <h4>Guess a number between 1-100!</h4>
-        </div>
-
-        <div id='main'>
-          <div id='parent-input'>
-            <!--DONE Player's guess input, and submit button -->
-            <input placeholder="?" maxlength="3" autofocus="autofocus" id="userGuess"></input>
-            <button id="submitButton">Submit</button>
-          </div>
-
-          <div id='guesses'>
-            <ul>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-            </ul>
-          </div>
-
-          <div id="menu-btns">
-            <!--DONE reset and hint buttons -->
-            <button>Reset</button>
-            <button>Hint</button>
-          </div>
-        </div>
-      </div>
-
-
-
-    <div id='footer'>
-        <div>
-          <div class='center'>
-            <img src='fa-logo@2x.png'></img>
-          </div>
-
-          <div class='center'>
-            <h4>Project by Nadim</h4>
-          </div>
-
-          <div class='center'>
-            <img src='grace_hopper_academy.png'></img>
-          </div>
-
-
-        </div>
+  <div id='main'>
+    <div id='input-parent'>
+      <!-- Player's guess input, and submit button -->
+      <input id="player-guess" placeholder="?" type="text">
+      <button id="submit" class="btn btn-primary">Go</button>
     </div>
 
-  </body>
+    <div id='guesses'>
+      <ul id="guess-list">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+      </ul>
+    </div>
+
+    <div id="menu-btns">
+      <!-- reset and hint buttons -->
+      <button id="reset" class="btn btn-danger">Reset</button>
+      <button id="hint" class="btn btn-info">Hint</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id='footer' class="center">
+  <div class="row">
+    <div class='col-sm-4'>
+      <img src='fa-logo@2x.png'>
+    </div>
+
+    <div class='col-sm-4'>
+      <h4>Project by Nadim Uddin</h4>
+    </div>
+
+    <div class='col-sm-4'>
+      <img src='gha.png'>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
