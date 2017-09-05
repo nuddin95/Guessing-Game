@@ -6,15 +6,18 @@ body{
     background-image: url("trees.jpg");
 }
 #app{
+    border:2px solid black;
     margin: auto;
     width:60%;
-    background-color: rgba(206, 256, 206, .5)
+    background-color: rgba(206, 256, 206, .6)
 }
 
 #submit{
     border-radius:50%;
     width:60px;
     height:60px;
+    font-size: 16px;
+    border: 2px solid black;
     position:absolute;
     top:110px;
     left:110px;
@@ -23,6 +26,7 @@ body{
     border-radius:50%;
     text-align:center;
     font-size:60px;
+    border: 2px solid black;
     width:160px;
     height:160px;
 }
@@ -39,7 +43,7 @@ ul {
 #guess-list li{
     display:inline;
     background-color:rgb(256, 256, 256);
-    border: 1px solid;
+    border: 2px solid;
     font-size:60px;
     padding: 0 25px;
     border-radius: 10%;
@@ -52,7 +56,7 @@ img {
 #footer {
     width: 100%;
     border-top: solid 2px black;
-    background-color: rgba(206, 256, 206, 0.5);
+    background-color: rgba(206, 256, 206, 0.6);
     position: fixed;
     bottom: 0;
 }
@@ -60,4 +64,32 @@ img {
 #parent-input {
     width: 160px;
     margin: 0 auto 0 auto;
+}
+
+#reset{
+    margin: 0 5px 5px 0;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#hint{
+    margin: 0 0 5px 5px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#status{
+
+    background-color:white;
+    width:25%;
+    margin: 5px auto 5px auto;
+    font-size:20px;
+}
+
+#hintContent{
+
+    background-color:white;
+    width:25%;
+    margin: 5px auto 5px auto;
+    font-size:20px;
 }
